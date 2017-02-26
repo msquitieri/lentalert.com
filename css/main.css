@@ -1,0 +1,48 @@
+body {
+  background: #f5f5f5;
+  border-top: #3f51b5 10px solid;
+  color: #3f51b5;
+  margin: 0;
+  /*padding-bottom: 80px;*/
+  /*border-bottom: #3f51b5 5px solid;*/
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  margin: auto;
+  text-align: center;
+  font-size: 65px;
+}
+
+h4 {
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.header {
+  margin-top: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+}
+
+div.content {
+  max-width: 700px;
+}
+
+div.sign-up-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+div.testimonials {
+  margin-top: 40px;
+}
+
+div.testimonials img {
+  float: left;
+  width: 60px;
+}
+
+div.testimonials p {
+  margin-left: 80px;
+}
