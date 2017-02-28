@@ -6,12 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
 
+  <meta property="og:url" content="https://lentalert.com"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Lent Alert!"/>
+  <meta property="og:description" content="Receive an email every Friday reminding you to not eat meat during Lent."/>
+  <meta property="og:image" content="https://lentalert.com/imgs/"/>
+
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <title>Lent Alert!</title>
 
   <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -58,7 +66,7 @@
       <div class="testimonial">
         <img src="./imgs/pope-francis.jpg">
         <p>"I can't tell you how many times I've bitten into a juicy hamburger and then realized it was Friday during Lent. Thanks Lent Alert!"</p>
-	    <p><b>~ Pope Francis I</b></p>
+        <p><b>~ Pope Francis I</b></p>
       </div>
     </div>
 
@@ -99,6 +107,28 @@
   ga('create', 'UA-92638559-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '224755647918299'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=224755647918299&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+<script>
+  $('form').on('submit', function() {
+    fbq('track', 'Lead');
+  });
 </script>
 
 </body>
